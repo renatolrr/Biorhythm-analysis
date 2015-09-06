@@ -1,3 +1,4 @@
 # Biorhythm-analysis
-NAME. 
+NAME.  
+  
 Biorhythm::analysis - a biorhythm analysis
