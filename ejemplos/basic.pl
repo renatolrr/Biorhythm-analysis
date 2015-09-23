@@ -16,3 +16,4 @@ while ($i < $limit) {
   print $bio->value('emotional'), "\n";
   $bio->next;
   $i++;
+}
