@@ -12,7 +12,10 @@ my $bio = Date::Biorhythm->new({
 my $i = 0;
 my $limit = 3;
 $bio->day(Date::Calc::Object->today);
+print 'Physical:';
 print $bio->value('physical'), "\n";
+print 'Emotional:';
 print $bio->value('emotional'), "\n";
+print 'Intelectual:';
 print $bio->value('intellectual'), "\n";
 
