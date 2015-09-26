@@ -9,13 +9,14 @@ my $bio = Date::Biorhythm->new({
   birthday => Date::Calc::Object->new(0, 1964, 2, 15),
 });
 
-my $tot=0;
 
 $bio->day(Date::Calc::Object->today);
 
 my $phy = $bio->value('physical');
 my $emo = $bio->value('emotional');
 my $int = $bio->value('intellectual');
+
+my $tot=$phy+$emo+$int;
 
 print 'Physical:';
 print $phy, "\n";
