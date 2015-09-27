@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr4/bin/perl
 
 #https://metacpan.org/source/BEPPU/Date-Biorhythm-2.2/examples/basic.pl
  
@@ -16,7 +16,10 @@ my $phy = $bio->value('physical');
 my $emo = $bio->value('emotional');
 my $int = $bio->value('intellectual');
 
-my $tot=$phy+$emo+$int;
+my $tot=0;
+if($phy==0){
+	$tot=$tot+4;
+};
 
 print 'Physical:';
 print $phy, "\n";
